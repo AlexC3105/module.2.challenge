@@ -12,10 +12,8 @@
 }
 
 /* Title Text on top of page. */
-.title {
-    padding: 10px 10px 5px 60px;
-    background-color: var(--secondary);
-    color: var(--tertiary);
+h1 {
+    color: var(--light);
     font-size: 2rem;
 }
 
@@ -40,7 +38,7 @@
     flex-wrap: wrap;
 }
 
-.body {
+body {
     margin: 0;
     padding: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -50,11 +48,11 @@
 }
 
 /* Top Navigation Bar */ /* >Top Left Cor.< */
-.nav a {
+nav a {
     text-decoration: none;
     display: inline-flex;
     padding: 10px 10px;
-    color: var(--secondary);
+    color: var(--light);
     margin-right: 10px;
     background-image: linear-gradient(270deg, var(--secondary) 0%, var(--secondary) 100%);
     background-repeat: no-repeat;
@@ -64,26 +62,24 @@
     font-size: 1.4rem;
 }
 /* Navigation Button Color Change */
-.nav a:hover {
+nav a:hover {
     background-size: 100% 100%;
     color: var(--primary);
 }
 
 /* Code related to css-tricks tutorial. */
-.header {
+header {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    background-color: var(--secondary);
-    justify-content: space-evenly;
-    padding: 10px 10px 10px 5px;
+    background-color: var(--dark);
+    justify-content: space-between;
+    padding: 1rem 3rem;
 }
 
-.nav {
+nav {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-evenly;
-    padding: 20px 50px 20px 20px;
+    padding: 0 1rem; 
 }
 
 /* Black/White Background. */ /* Verify if image lines up evenly. */
@@ -125,19 +121,19 @@
 }
 
 /* Should affect all sections. >???< verify with class if correct. */
-.section {
-    display: flex;
-    flex-direction: row;
-    margin: 20px;
+section {
+
+    flex: 0 0 70%;
+    
 }
 
-.content {
+main {
     display: flex;
     flex-wrap: wrap;
     padding: 5px;
 }
 
-.aside-header {
+aside {
     text-align: right;
     flex: 0 0 25%;
     padding-right: 10px;
